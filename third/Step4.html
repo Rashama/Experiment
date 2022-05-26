@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Link the style sheets and Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andika">
+    <link rel="shortcut icon" type="image/png" href="images/pigeon-icon.png" />
+    <!-- Image by <a href="https://pixabay.com/users/chiplanay-1971251/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3303111">chiplanay</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3303111">Pixabay</a> -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Enterprise Resource Planning Experiment</title>
+</head>
+
+<body>
+
+    <main>
+          <ul style="background-color: white; color: black">
+            <li><a style="font-size: 20px; background-color: white; color:black" href="#home"><b>Third Scenario</b></a></li>
+        </ul>
+
+        <ul class="bouttons">
+            <li><a href="#home">Step 1</a></li>
+            <li><a href="#news">Step 2</a></li>
+            <li><a href="#contact">Step 3</a></li>
+            <li><a style="color:burlywood; font-size: 20px" href="#about">Step 4</a></li>
+
+
+        </ul>
+
+
+        <h1>Step 4: Solutions to Help Unproductive Employees</h1>
+
+
+
+        <div class="xxx">
+<!--               <h2>Please answer the following questions</h2>-->
+<!--
+            <form>
+                <p>Unproductive employees have high rates of project failure, absenteeism, and customer complaints.
+                    </p>
+                    <p>Could you suggest some solutions to help unproductive employees? </p>
+                <label for="fname"></label>
+                <input style="width:94%;padding:20px" type="text" id="q8" name="q8"> <br>
+                <input style="width:94%;padding:20px" type="text" id="q9" name="q9">
+                <br>
+            </form>
+-->
+          
+                 <p>Unproductive employees have high rates of project failure, absenteeism, and customer complaints.
+                    </p>
+                    <p>Could you suggest some solutions to help unproductive employees? </p>
+            
+              <div>
+  
+<form>
+  <input type="checkbox" name="name1" value="value1">
+  <label for="vehicle1">  Allow employees to purchase company stocks at a discounted price.</label><br>
+  <input type="checkbox" name="name2" value="value2">
+  <label for="vehicle2"> Stop micromanagement in task delegation.</label><br>
+  <input type="checkbox" name="name3" value="value3" >
+  <label for="vehicle3"> Offer flexible work arrangements.</label><br>
+     <input type="checkbox" name="name4" value="value4" >
+  <label for="vehicle3"> Allow employees to shape their own roles.</label><br>
+     <input type="checkbox" name="name5" value="value5" >
+  <label for="vehicle3"> Set attainable goals.</label><br>
+    <input type="checkbox" name="name6" value="value6" >
+  <label for="vehicle3"> Eliminate work-related stress.</label><br>
+      <input type="checkbox" name="name7" value="value7" >
+  <label for="vehicle3"> Match tasks to skills.</label><br>
+    <input type="checkbox" name="name8" value="value8" >
+  <label for="vehicle3"> Equip employees with proper tools.</label><br>
+    <input type="checkbox" name="name8" value="value8">
+  <label for="vehicle3"> Delegate and distribute effectively.</label><br><br>
+<!--
+    <input type="checkbox" name="name8" value="value8" checked>
+  <label for="vehicle3"> Equip employees with proper tools.</label><br>
+-->
+    
+<!--  <input type="submit" value="Submit">-->
+</form>
+     
+                  
+        </div>
+        
+        
+     
+        
+        <p></p>
+
+
+
+        <script>
+            var q8 = document.getElementById("q8");
+            var q9 = document.getElementById("q9");
+            document.getElementById("q8").value = localStorage.getItem("q8");
+            document.getElementById("q9").value = localStorage.getItem("q9");
+
+            function submit4() {
+                if (q8.value !== "" || q9.value !== "") {
+                    localStorage.setItem("q8", q8.value);
+                    localStorage.setItem("q9", q9.value);
+                    localStorage.clear();
+                    window.location.href = "End.html";
+                }
+                else {
+                    alert("Please enter at least one of the options");
+
+                }
+            }
+        </script>
+
+        <div class="bouttons">
+            <a href="Step3.html" class="previous" style="display: inline-block">&laquo; Back to Step 3</a>
+            <a href="End.html" onclick="submit4()" class="next" style="display: inline-block">End of Third Scenario &raquo;</a>
+        </div>
+
+
+
+
+    </main>
+    <!--
+        <footer>
+          <p>If you have any questions please contact: Rasha <br/>
+            Rashama@umich.edu</p>
+        </footer>
+    -->
+</body>
+</html>

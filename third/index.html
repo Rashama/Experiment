@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Link the style sheets and Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andika">
+    <link rel="shortcut icon" type="image/png" href="images/pigeon-icon.png" />
+    <!-- Image by <a href="https://pixabay.com/users/chiplanay-1971251/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3303111">chiplanay</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3303111">Pixabay</a> -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Enterprise Resource Planning Experiment</title>
+</head>
+
+<body>
+
+    <main>
+<!--        <h1>Experiment</h1>-->
+        <div class="text">
+            <h2 style="text-align: center">Third Scenario</h2>
+
+            <!--      <h2>About</h2>-->
+           <p>In third scenario, you will perform the same task. This time, however, the Enterprise Resource Planning system will adapt to your previous usage behavior and
+               provide you some information to help you accomplish your task faster and more efficiently.  </p>
+            
+            <p>You need to perform the <b>Workforce Management </b> task.</p>
+            <br>
+
+            <label for="">Choose a task:</label>
+            <select name="" id="taskchoose">
+                <option value="work"> Workforce Management Task. </option>
+                <option value="task1"> Order Management Task.</option>
+                <option value="task1"> Procurement Task.</option>
+                <option value="task1"> Warehouse Management Task.</option>
+                <option value="task1"> Inventory Management Task.</option>
+                <option value="task1"> Finance and Accounting Task. </option>
+                <option value="task1"> Manufacturing Task. </option>
+                <option value="task1"> Supply Chain Management Task. </option>
+                <option value="task1"> Customer Relationship Management Task. </option>
+                <option value="task1"> Professional Services Automation Task. </option>
+                
+                <option value="task1"> Human Resources Management Task. </option>
+                <option value="task1"> Ecommerce Task. </option>
+                <option value="task1"> Marketing Automation Task. </option>
+
+
+            </select>
+            <P>
+                <a onclick="submit()" href="#">Next</a>
+            </P>
+
+        </div>
+
+
+
+        <script>
+            function submit() {
+                var task = document.getElementById("taskchoose");
+                if (task.value !== "work") {
+                    alert("Please choose ''Workforce Management'' from the list.");
+                    task.style.borderColor = "red";
+
+
+                }
+                else {
+                    window.location.href = "Step1.html";
+                   
+                }
+            }
+         
+        </script>
+
+
+    </main>
+    <footer>
+        <p>
+            If you have any questions please contact: Rasha <br />
+            Rashama@umich.edu
+        </p>
+    </footer>
+</body>
+</html>
